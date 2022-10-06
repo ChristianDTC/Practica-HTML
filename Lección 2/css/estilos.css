@@ -6,5 +6,18 @@ p{
     background-color: brown;
     padding: 15px;
     border: 10px solid powderblue;
-    margin: 50px;
+    /*
+    margin-top: 40px; /*margen superior
+    margin-right: 15px; /*margen derecho 
+    margin-bottom: 30px; /*margen inferior
+    margin-left: 20px; /*margen izquierdo
+    */
+
+    /* margin: 40px 15px 30px 20px; mantiene la misma dispicisión que antes*/
+    /*si agrego 3 valores el 2 va a ser el mismo para el margen izquierdo y derecho*/
+    /*si agreso 2 valores el 1 va a ser para el margen superior e inferiro y*/
+    /*el 2 va a ser para el margen izquierdo y derecho*/
+
+    margin: auto 50px; /*centra el cuerpo sin tener en cuenta el margen superior e inferior*/
+    text-align: center; /*me permite alinear el texto en este caso lo centra*/
 }
