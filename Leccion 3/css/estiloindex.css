@@ -1,5 +1,6 @@
 h1 {
     color: #560bad;
+    font-size: 40px;
 }
 
 a:link, a:visited {
@@ -8,6 +9,7 @@ a:link, a:visited {
     padding: 25px 45px;
     text-align: center;
     text-decoration: none;
+    display: inline-block; /*evita que se superpongan los botones*/
 }/*al poner estados distintos y separados por coma decimos que van a tener los mismos estilos*/
 
 a:hover, a:active {
