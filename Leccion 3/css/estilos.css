@@ -1,0 +1,21 @@
+h1 {
+    color:#f07167;
+    text-align: center;
+}
+
+a:link {
+    color:#fb8500; /*color letra link anten del primer link*/
+    text-decoration: none; /*sacamos el subrayado del link*/
+}
+a:visited {
+    color:#219ebc; /*color letra link cuando ya cliqueamos el link*/
+    text-decoration: none;
+}
+a:hover {
+    color:#8ecae6; /*color letra link cuando posicionamos el cursor encima*/
+    text-decoration: underline; /*agrego el subrayado del link*/
+}
+a:active {
+    color:#023047; /*color letra del link cuando cliqueamos en el*/
+    text-decoration: underline;
+}
