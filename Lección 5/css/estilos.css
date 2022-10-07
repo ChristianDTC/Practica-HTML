@@ -1,0 +1,28 @@
+h1 {
+    color:#1d3557;
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #457b9d;
+    overflow: hidden; /*permite tomar la lista de manera independiente*/
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    text-decoration: none;
+}/*al poner (li a) solo vamos a modificar los links que esten dentro de la lista*/
+li a:hover {
+    background-color: #1d3557;
+}
