@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+}
+
+table {
+    width: 100%; /*extendemos la tabla el máximo posible*/
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse; /*eliminamos la doble línea*/
+    padding: 5px; /*margen en las celdas*/
+    font-size: 20px;
+    /* border-spacing: 5px; en el caso que queramos dejar la doble línea, se establece el margen */
+}
+td {
+    text-align: center;
+}
+th {
+    background-color: rgba(46, 251, 0, 0.472);
+}
+tr:nth-child(even) {
+    background-color: lightcyan;
+}/*even - renglones pares*/
+tr:nth-child(odd) {
+    background-color: gainsboro;
+}/*odd - renglones impares*/
+
+caption {
+    color:darkmagenta;
+    font-family: 'Trocchi', serif;
+    font-size: 40px;
+    line-height: 70px; /*margen del caption*/
+}
