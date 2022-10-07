@@ -1,0 +1,14 @@
+ol {
+    list-style: none;
+    counter-reset: contador; /*se declara e inicializa el contador*/
+}
+ol li {
+    counter-increment: contador; /*generamos el contador en 1*/
+}
+ol li::before { /*modifico el inicio de la línea de la lista en este caso por un texto*/
+    content: "Ej." counter(contador) ") "; /*agregamos un contador*/
+    color: #ff6f00
+}
+ol li::after { /*modifico el final de la línea de la lista en este caso por un punto*/
+    content: ".";
+}
