@@ -8,11 +8,95 @@
 </head>
 <body>
     <H1>FORMULARIO en HTML</H1>
-    <form>
-        <label for="nombre">Nombre:</label><br/>
-        <!--(for) sirve para que al hacer click en el texto nombre nos dirija al input-->
-        <input type="text" id="nombre"/><br/>
-        <input type="submit" value="Enviar"/>
+    <form action="mi_servidor" method="POST" autocomplete="off">
+        <!--(action) url del servidor-->
+
+        <fieldset>
+            <!--(fieldset) es un marco visial -->
+            
+            <legend>REGISTRO</legend>
+            <!--(legend) texto que podemos agregar al fieldset-->
+
+            <label for="registro">ID N°:</label><br/>
+            <input type="text" id="registro" name="registro"
+                readonly="true" value="100"/><br/>
+            <!--(readonly)no permite modificar el texto-->
+            <br/>
+
+            <input type="hidden" id="valorOculto" name="valorOculto" value="loQueSea">
+
+            <label for="nombre">Nombre:</label><br/>
+            <!--(for) sirve para que al hacer click en el texto nombre nos dirija al input-->
+            <input type="text" id="nombre" name="nombre"
+            placeholder="Escribe tú nombre" required="true"/><br/>
+            <!--(name) al agregarlo en el boton cuando presionamos el boton se envian estos datos en la url-->
+            <!--(placeholder) permite agregar un texto dentro de la caja de texto-->
+            <!--(required) obliga al usuario a cargar el campo, lo hace obligatorio*-->
+            <br/>
+            
+            <label for="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Escribe tú apellido" required="true"/><br/>
+            <br/>
+            
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"
+                placeholder="Escribe tú email"required="true"/><br/>
+            <br/>
+            
+            <label for="edad">Edad:</label><br/>
+            <input type="number" id="edad" name="edad"
+                    placeholder="Escribe tú edad"required="true"/><br/>
+            <br/>
+            
+            <label>Género:</label><br/>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femenino">Fememino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label for="masculino">Masculino</label><br/>
+            <!--(name) para que solo se pueda seleccionar una opción el name tiene que ser el mismo-->
+            <br/>
+            
+            <label>Lenguajes:</label><br/>
+            <input type="checkbox" id="python" name="lenguajes" value="python"/>
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="lenguajes" value="java"/>
+            <label for="java">JAVA</label><br/>
+            <input type="checkbox" id="react" name="lenguajes" value="react"/>
+            <label for="react">React</label>
+            <input type="checkbox" id="javascript" name="lenguajes" value="javascript"/>
+            <label for="javascript">JavaScript</label><br/>
+            <!--(name)para el checkbox el name tiene que ser igual para mandar todos los datos juntos-->
+            <br/>
+            
+            <label for="experiencia">Experiencia</label><br/>
+            <select name="experiencia" id="experiencia">
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+                <option value="semisenior">SemiSenior</option>
+                <option value="senior">Senior</option>
+            </select><br/>
+            <br/>
+
+            <label>Comentario:</label><br/>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"
+            >Escriba su comentario.
+            </textarea><br/>
+            <!--(cols-rows)manejan el tamaño del text área-->
+            <br/>
+
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password"
+                required="true"/><br/>
+            <br/>
+            
+            <input type="submit" value="Enviar"/>
+            <input type="submit" formnovalidate="fromnovalidate" value="Envias sin Validar"/>
+            <!--(formnovalidate)permite enviar la información saltando los campos obligatorios-->
+            <input type="reset" value="Limpiar Formulario">
+
+        </fieldset>
+
     </form>
 </body>
 </html>
